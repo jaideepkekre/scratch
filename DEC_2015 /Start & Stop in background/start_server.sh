@@ -3,7 +3,7 @@
 #_author_ = Jaideep Kekre
 #_info_   = This module contains a Bash script 
 echo "********************************"
-nohup python ws.py 192.168.9.141:40123 > ws_logger.txt 2>&1& 
+nohup ping 8.8.8.8 > ws_logger.txt 2>&1& 
 echo $! > pid_DO_NOT_DELTE.txt 
 echo "Server started at PID:"
 echo $!
