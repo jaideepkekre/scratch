@@ -17,21 +17,17 @@ def main(target):
     #65535
     store = ""
     for i in range(1,65535):
+        #print i 
         s = socket(AF_INET, SOCK_STREAM)
         result = s.connect_ex((targetIP, i))
-        print i 
-        filename="Portlogger"+"_"+str(targetIP)+".txt"
-        portfile=open(filename,'w+')
+        #print result              
         if(result == 0) :
             print 'Port %d: OPEN' % (i,)            
             genericSTR="Port Open :"
-            print i 
-            #writeToFile=genericSTR+str(i)+'\n'
-            store=store+genericSTR+str(i)+'\n'
-
-            
+            store=store+genericSTR+str(i)+'\n'            
         s.close()
     pass
+
     filename="Portlogger"+"_"+str(targetIP)+".txt"
     portfile=open(filename,'w+')
     portfile.writelines(store)

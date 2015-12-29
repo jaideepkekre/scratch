@@ -1,5 +1,0 @@
-Port Open :40934
-Port Open :43108
-Port Open :52978
-Port Open :57752
-Port Open :59856
