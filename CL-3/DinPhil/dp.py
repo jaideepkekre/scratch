@@ -23,16 +23,9 @@ def init():
         number=x
         
         i=0 
-        while i<x:
-                fork=dict() 
-                fork['Number']=i
-                fork['status']=False
-                fork_list.append(fork)
+        while i<x:                                
                 
-                philo=dict()
-                philo['Number']=i
-                philo['status']='H'
-                philo_list.append(philo)
+                philo_list.append(i)
                 
                 '''
                 H,S,W
@@ -105,9 +98,8 @@ def start_dinner():
 	
 	
 	while i<number:		
-		philo  = philo_list.pop()
-		num = philo['Number']
-		thread = threading.Thread(target=eat, args=[num])
+		philo  = philo_list.pop()	
+		thread = threading.Thread(target=eat, args=[philo])
 		thread.start()
 		i=i+1
 
