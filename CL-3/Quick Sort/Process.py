@@ -42,7 +42,7 @@ def higher (arg_list,pivot,que):
 
 x=0
 lis=list()
-while x < 1000 :
+while x < 10000 :
         num = randint(1,5000)
         lis.append(num)
         x=x+1
