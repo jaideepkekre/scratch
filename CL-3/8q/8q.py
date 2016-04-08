@@ -119,7 +119,7 @@ def place(board,col,row=0):
         			board[i][col]=1
         			last_placed.append([i,col])        			
         			print"Placed"
-        			#prin(board)
+        			prin(board)
         			place(board,col+1)
         			return True 
         		 

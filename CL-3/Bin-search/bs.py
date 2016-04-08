@@ -65,8 +65,7 @@ while run < cpu_nos:
       global_list.append(lis)
 global_list.append(ele[upper-unit:])
 
-for lis in global_list :
-        print lis 
+for lis in global_list :         
         p=Process(target=search , args=(lis,ip))
         process_table.append(p)
         p.start()    

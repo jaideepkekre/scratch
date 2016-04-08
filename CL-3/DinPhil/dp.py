@@ -12,7 +12,7 @@ from time import sleep
 
 manager=Manager()
 
-fork_list=manager.list()
+#fork_list=manager.list()
 philo_list=manager.list()
 locked=manager.list()
 number=-1 
@@ -53,7 +53,7 @@ def eat(philo):
                 if status == True :
                 
                         set_lock(left,right)
-                        sleep(0.5)
+                        sleep(10)
                         print"Philosopher:" + str(x) + "has eaten "
                         done=True 
                         release_lock(left,right)
