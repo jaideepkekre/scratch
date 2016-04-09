@@ -1,5 +1,6 @@
 
 def rotate(bina,rot):
+	
 	string=bin(bina)[2:]
 	
 	while rot > 0 :
@@ -28,7 +29,7 @@ def padder(ip):
 		word.append([a])
 		
 		 
-	print type(word)	
+	
 	return word 
 	      
         
@@ -100,15 +101,16 @@ def sha_custom(words):
 	return has
 		
 	
-s=digest("hi")
+s=digest("12345678999999")
 padd=padder(s)
 a=sha_custom(padd)
 
 
-s=digest("hi!")
+s=digest("12345678999999")
 padd=padder(s)
 b=sha_custom(padd)	
-
+print a 
+print b
 if a==b :
 	print "YAAAY!"
 else :
