@@ -5,7 +5,7 @@ author: Jaideep Kekre
 """
 
 a=-25
-b=25
+b=344
 product=0 
 def rever(int_arg):
         str_arg=reversed(str(int_arg))
